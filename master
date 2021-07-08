@@ -1,0 +1,26 @@
+public class master {
+	
+	public static void main(String[] args) {
+		
+		System.out.println("What is your name?");
+		System.out.print(">");
+		String name = new java.util.Scanner(System.in).next();
+		System.out.println("Hello, " +name +"!");
+		
+		int dice1 = (int) (Math.random()*6)+1;
+		int dice2 = (int) (Math.random()*6)+1;
+		int total;
+		
+		total = dice1 + dice2;
+		
+		System.out.println("Rolling the dice...");
+		System.out.println("Die 1: " +dice1);
+		System.out.println("Die 2: " +dice2);
+		System.out.println("Total value: " +total);
+		
+		if(total>7) System.out.println(name +" won!");
+		else System.out.println(name +" lost!");
+
+	}
+
+}
